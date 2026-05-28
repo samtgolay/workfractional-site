@@ -212,7 +212,7 @@ h1, h2, h3 {
 .hero-copy {
   width: 100%;
   max-width: 720px;
-  margin: -75px auto 0;
+  margin: -50px auto 0;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -234,7 +234,7 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
 }
 .hero-art-img {
@@ -243,7 +243,6 @@ h1, h2, h3 {
   height: auto;
   max-height: none;
   object-fit: contain;
-  transform: translateX(-7%);
 }
 
 /* ---------- Sections (shared) ---------- */
@@ -558,8 +557,8 @@ h1, h2, h3 {
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hero { padding: 40px 0 64px; }
-  .hero-art { max-width: 400px; }
-  .hero-copy { margin-top: -50px; }
+  .hero-art { max-width: 270px; }
+  .hero-copy { margin-top: -35px; }
   .section { padding: 72px 0; }
 
   .steps {
