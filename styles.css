@@ -222,11 +222,25 @@ h1, h2, h3 {
   line-height: 1.08;
   margin: 8px 0 18px;
 }
+.hero-brandline {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(18px, 2vw, 22px);
+  color: var(--coral);
+  margin: 4px 0 18px;
+  letter-spacing: 0.01em;
+}
 .hero-sub {
   font-size: 17px;
   color: var(--warm-gray);
-  margin: 0 auto 32px;
-  max-width: 52ch;
+  margin: 0 auto 28px;
+  max-width: 60ch;
+}
+.hero-microcopy {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--warm-gray-soft);
+  font-style: italic;
 }
 
 .hero-art {
@@ -255,87 +269,117 @@ h1, h2, h3 {
   font-size: 16px;
 }
 
-/* ---------- Accordion ---------- */
-.accordion {
-  margin-top: 32px;
+/* ---------- What I do: lead card + toolkit cards ---------- */
+.lead-card {
+  background: var(--cream);
+  border: 1px solid var(--hairline);
+  border-left: 4px solid var(--coral);
+  border-radius: 14px;
+  padding: 44px 44px 40px;
+  max-width: 880px;
+  margin: 56px auto 0;
+  box-shadow: 0 10px 40px rgba(42, 42, 42, 0.05);
 }
-.accordion-item {
-  /* no divider; whitespace only */
+.lead-card .eyebrow {
+  margin-bottom: 12px;
 }
-.accordion-trigger {
-  width: 100%;
-  background: transparent;
-  border: 0;
-  padding: 28px 4px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  font-family: var(--serif);
-  font-size: clamp(22px, 2.6vw, 30px);
-  font-weight: 600;
-  color: var(--charcoal);
-  text-align: left;
-  transition: color .2s var(--ease);
+.lead-card-title {
+  font-size: clamp(26px, 3vw, 34px);
+  margin: 0 0 16px;
+  line-height: 1.2;
 }
-.accordion-trigger:hover { color: var(--coral); }
-.accordion-title { line-height: 1.2; }
-.accordion-icon {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
+.lead-card-body {
+  color: var(--warm-gray);
+  font-size: 16px;
+  margin: 0 0 20px;
 }
-.accordion-icon::before,
-.accordion-icon::after {
-  content: '';
-  position: absolute;
-  background: var(--coral);
-  border-radius: 2px;
-  transition: transform .3s var(--ease), opacity .3s var(--ease);
+.lead-card-list {
+  margin: 8px 0 0;
+  padding-left: 1.1em;
+  columns: 2;
+  column-gap: 36px;
 }
-.accordion-icon::before {
-  /* horizontal bar */
-  top: 50%; left: 0;
-  width: 100%; height: 2px;
-  transform: translateY(-50%);
+.lead-card-list li {
+  margin: 6px 0;
+  break-inside: avoid;
 }
-.accordion-icon::after {
-  /* vertical bar (becomes hidden when open) */
-  left: 50%; top: 0;
-  width: 2px; height: 100%;
-  transform: translateX(-50%);
+.lead-card-list li::marker {
+  color: var(--coral);
 }
-.accordion-trigger[aria-expanded="true"] .accordion-icon::after {
-  transform: translateX(-50%) rotate(90deg);
-  opacity: 0;
-}
-.accordion-panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .35s var(--ease);
-}
-.accordion-inner {
-  padding: 4px 4px 28px;
-  max-width: 60ch;
-}
-.accordion-sub {
+
+.toolkit-intro {
+  text-align: center;
   font-family: var(--serif);
   font-style: italic;
-  color: var(--charcoal);
-  font-size: 17px;
-  line-height: 1.4;
-  margin: 0 0 14px;
+  color: var(--warm-gray);
+  font-size: 16px;
+  max-width: 60ch;
+  margin: 64px auto 24px;
 }
-.accordion-inner ul {
-  margin: 10px 0 0;
-  padding-left: 1.1em;
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 880px;
+  margin: 0 auto;
 }
-.accordion-inner li {
-  margin: 6px 0;
+.toolkit-card {
+  background: var(--cream);
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  padding: 32px 28px;
 }
-.accordion-inner li::marker {
+.toolkit-title {
+  font-size: 22px;
+  margin: 0 0 10px;
+  line-height: 1.2;
+}
+.toolkit-card p {
+  color: var(--warm-gray);
+  margin: 0;
+}
+
+/* ---------- The Exit Edge ---------- */
+.section-exit {
+  background: var(--charcoal);
+  color: rgba(245, 241, 235, 0.85);
+}
+.section-exit .section-headline {
+  color: var(--cream);
+}
+.section-exit .eyebrow {
   color: var(--coral);
+}
+.section-exit .lead {
+  color: rgba(245, 241, 235, 0.78);
+  max-width: 64ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.exit-flow {
+  margin: 56px auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+}
+.exit-step {
+  font-family: var(--serif);
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 600;
+  color: var(--cream);
+  letter-spacing: 0.01em;
+}
+.exit-arrow {
+  font-family: var(--serif);
+  font-size: clamp(20px, 2.6vw, 28px);
+  color: var(--coral);
+}
+.exit-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
 }
 
 /* ---------- How we work ---------- */
@@ -488,6 +532,7 @@ h1, h2, h3 {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: 15% center;
   border-radius: 14px;
 }
 .about-copy p {
@@ -498,6 +543,81 @@ h1, h2, h3 {
   font-style: italic;
   color: var(--charcoal);
 }
+
+/* The bench — 3-up of headshot cards inside the About section */
+.bench-block {
+  margin-top: 96px;
+}
+.bench-intro {
+  text-align: center;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--warm-gray);
+  font-size: 16px;
+  max-width: 60ch;
+  margin: 0 auto 40px;
+}
+.bench-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+.bench-card {
+  background: var(--cream);
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bench-photo {
+  display: block;
+  width: 72%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  align-self: center;
+  margin-bottom: 18px;
+}
+.bench-name {
+  font-size: 22px;
+  margin: 0 0 4px;
+  line-height: 1.2;
+}
+.bench-title {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin: 0 0 14px;
+}
+.bench-bio {
+  color: var(--warm-gray);
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0 0 16px;
+}
+.bench-linkedin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--coral);
+  background: transparent;
+  transition: color .2s var(--ease), background-color .2s var(--ease), transform .2s var(--ease);
+  margin-top: auto;
+}
+.bench-linkedin:hover {
+  color: var(--cream);
+  background: var(--coral);
+  transform: translateY(-1px);
+}
+.bench-linkedin svg { display: block; }
 
 /* ---------- Contact ---------- */
 .section-contact {
@@ -586,6 +706,18 @@ h1, h2, h3 {
   .about-photo { max-width: 360px; margin: 0 auto; }
 
   .logo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .lead-card { padding: 32px 24px; }
+  .lead-card-list { columns: 1; }
+  .toolkit-grid { grid-template-columns: 1fr; max-width: 540px; }
+
+  .bench-block { margin-top: 72px; }
+  .bench-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 620px) {
@@ -595,16 +727,13 @@ h1, h2, h3 {
   .nav-links a.btn { display: inline-block; }
 
   .section-headline { font-size: 28px; }
-  .hero-sub { font-size: 17px; }
-  .lead { font-size: 17px; }
-
-  .pricing-card { padding: 32px 22px; }
+  .hero-sub { font-size: 16px; }
+  .lead { font-size: 15px; }
 }
 
 /* Respect users who prefer reduced motion. */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .accordion-panel { transition: none; }
   .btn { transition: none; }
 }
