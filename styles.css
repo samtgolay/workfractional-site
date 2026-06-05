@@ -198,6 +198,43 @@ h1, h2, h3 {
   color: var(--coral);
 }
 
+/* Hamburger toggle (hidden on desktop, shown on small screens) */
+.nav-toggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 60;
+}
+.nav-toggle-bar {
+  position: absolute;
+  left: 9px;
+  width: 22px;
+  height: 2px;
+  background: var(--charcoal);
+  border-radius: 2px;
+  transition: transform .3s var(--ease), opacity .25s var(--ease), top .3s var(--ease);
+}
+.nav-toggle-bar:nth-child(1) { top: 13px; }
+.nav-toggle-bar:nth-child(2) { top: 19px; }
+.nav-toggle-bar:nth-child(3) { top: 25px; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
+  top: 19px;
+  transform: rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) {
+  top: 19px;
+  transform: rotate(-45deg);
+}
+body.nav-locked { overflow: hidden; }
+
 /* ---------- Hero ---------- */
 .hero {
   padding: 64px 0 96px;
@@ -662,6 +699,223 @@ h1, h2, h3 {
 }
 .footer-meta a:hover { color: var(--coral); }
 
+/* =========================================================
+   PRICING PAGE
+   Same design system as the homepage; only new components live here.
+   ========================================================= */
+
+/* Hero on the pricing page (no logo composition, just type-led) */
+.pricing-hero {
+  padding: 112px 0 64px;
+  text-align: center;
+}
+.pricing-hero-headline {
+  margin-bottom: 18px;
+}
+
+/* Operations Diagnostic — single emphasized card on cream-deep background */
+.section-diagnostic {
+  background: var(--cream-deep);
+}
+.diagnostic-card {
+  max-width: 880px;
+  margin: 0 auto;
+  background: var(--cream);
+  border: 1px solid var(--hairline);
+  border-left: 4px solid var(--coral);
+  border-radius: 14px;
+  padding: 48px 44px;
+  box-shadow: 0 10px 40px rgba(42, 42, 42, 0.05);
+}
+.diagnostic-head .eyebrow { margin-bottom: 12px; }
+.diagnostic-sub {
+  font-family: var(--serif);
+  font-size: 20px;
+  color: var(--charcoal);
+  margin: 0 0 24px;
+}
+.diagnostic-sub strong { font-weight: 700; }
+.diagnostic-body p {
+  color: var(--warm-gray);
+  margin: 0 0 20px;
+}
+.diagnostic-list-title {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  margin: 24px 0 12px;
+}
+.diagnostic-list {
+  margin: 0 0 28px;
+  padding-left: 1.1em;
+}
+.diagnostic-list li {
+  margin: 8px 0;
+  color: var(--warm-gray);
+}
+.diagnostic-list li::marker { color: var(--coral); }
+
+/* Retainer tier grid */
+.tier-grid {
+  margin: 56px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  align-items: stretch;
+}
+.tier-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  padding: 36px 28px;
+}
+.tier-card.is-featured {
+  border: 2px solid var(--coral);
+  box-shadow: 0 14px 44px rgba(203, 59, 59, 0.10);
+  transform: translateY(-4px);
+}
+.tier-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--coral);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.tier-card .eyebrow {
+  margin-bottom: 10px;
+}
+.tier-price {
+  font-family: var(--serif);
+  font-size: clamp(28px, 3.2vw, 36px);
+  font-weight: 600;
+  color: var(--charcoal);
+  margin: 0 0 4px;
+  line-height: 1.1;
+}
+.tier-price-unit {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--warm-gray);
+  letter-spacing: 0.02em;
+}
+.tier-cadence {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--warm-gray-soft);
+  margin: 0 0 20px;
+}
+.tier-positioning {
+  color: var(--warm-gray);
+  margin: 0 0 22px;
+}
+.tier-list-title {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  margin: 0 0 10px;
+}
+.tier-list {
+  margin: 0 0 24px;
+  padding-left: 1.1em;
+}
+.tier-list li {
+  margin: 6px 0;
+  color: var(--warm-gray);
+  font-size: 14px;
+}
+.tier-list li::marker { color: var(--coral); }
+.tier-card .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* "Set expectations" section reuses .section + cream-deep */
+.section-expectations {
+  background: var(--cream-deep);
+}
+
+/* FAQ accordion (native <details>) */
+.faq-list {
+  margin-top: 40px;
+}
+.faq-item {
+  border-top: 1px solid var(--hairline);
+}
+.faq-list .faq-item:last-of-type {
+  border-bottom: 1px solid var(--hairline);
+}
+.faq-q {
+  cursor: pointer;
+  list-style: none;
+  padding: 22px 0;
+  font-family: var(--serif);
+  font-size: clamp(20px, 2.2vw, 24px);
+  font-weight: 600;
+  color: var(--charcoal);
+  position: relative;
+  padding-right: 40px;
+  transition: color .2s var(--ease);
+}
+.faq-q::-webkit-details-marker { display: none; }
+.faq-q:hover { color: var(--coral); }
+.faq-q::after {
+  content: '+';
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--serif);
+  font-size: 26px;
+  color: var(--coral);
+  line-height: 1;
+  transition: transform .25s var(--ease);
+}
+.faq-item[open] .faq-q::after {
+  content: '\2013'; /* en dash for the open state */
+}
+.faq-a {
+  margin: 0 0 22px;
+  color: var(--warm-gray);
+  max-width: 60ch;
+}
+
+/* Final CTA block on pricing page */
+.section-pricing-cta {
+  background: var(--cream-deep);
+  text-align: center;
+}
+.section-pricing-cta .lead {
+  margin-bottom: 28px;
+}
+
+/* Current-page highlight in nav (desktop) */
+.nav-links a[aria-current="page"] {
+  color: var(--coral);
+}
+
 /* ---------- Reveal-on-scroll ---------- */
 .reveal {
   opacity: 0;
@@ -718,14 +972,52 @@ h1, h2, h3 {
     max-width: 480px;
     margin: 0 auto;
   }
+
+  /* Pricing page */
+  .pricing-hero { padding: 80px 0 40px; }
+  .diagnostic-card { padding: 36px 26px; }
+  .tier-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 480px;
+  }
+  .tier-card.is-featured { transform: none; }
+}
+
+@media (max-width: 767px) {
+  /* Show hamburger, hide inline nav by default */
+  .nav-toggle { display: inline-block; }
+  .nav-links {
+    position: fixed;
+    inset: 0;
+    background: var(--cream);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 80px 24px 40px;
+    transform: translateX(100%);
+    transition: transform .35s var(--ease);
+    z-index: 40;
+  }
+  .nav-links.is-open { transform: translateX(0); }
+  .nav-links a:not(.btn) {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--charcoal);
+  }
+  .nav-links a.btn {
+    margin-top: 8px;
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+  .nav-links a[aria-current="page"] {
+    color: var(--coral);
+  }
 }
 
 @media (max-width: 620px) {
-  .nav-links { gap: 14px; }
-  .nav-links a:not(.btn) { display: none; }
-  /* Keep only the "Book a Call" button visible on small screens. */
-  .nav-links a.btn { display: inline-block; }
-
   .section-headline { font-size: 28px; }
   .hero-sub { font-size: 16px; }
   .lead { font-size: 15px; }
