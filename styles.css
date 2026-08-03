@@ -1023,6 +1023,150 @@ body.nav-locked { overflow: hidden; }
   .lead { font-size: 15px; }
 }
 
+/* =========================================================
+   PARTNERS / OPERATOR NETWORK PAGE
+   Same design system as the rest of the site; components below
+   are specific to this page.
+   ========================================================= */
+
+/* Case study card in the Proof section reuses .lead-card */
+.case-study { margin-top: 40px; }
+
+.partners-intro .lead { font-size: 16px; }
+
+/* Why peers refer — 3-up cards (reuses .toolkit-card) */
+.reasons-grid {
+  margin: 56px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+}
+
+/* What you earn — table */
+.earn-table-wrap {
+  max-width: 880px;
+  margin: 56px auto 0;
+  overflow-x: auto;
+}
+.earn-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--cream);
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(42, 42, 42, 0.05);
+}
+.earn-table th,
+.earn-table td {
+  text-align: left;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+}
+.earn-table thead th {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  background: var(--cream-deep);
+}
+.earn-table tbody tr:last-child td { border-bottom: 0; }
+.earn-table td:first-child {
+  font-family: var(--serif);
+  color: var(--charcoal);
+  font-size: 16px;
+  width: 38%;
+}
+.earn-table td:last-child { color: var(--warm-gray); }
+
+/* The rules — coral-marker list */
+.rules-list {
+  max-width: 760px;
+  margin: 48px auto 0;
+  padding-left: 1.1em;
+}
+.rules-list li {
+  margin: 12px 0;
+  color: var(--warm-gray);
+}
+.rules-list li::marker { color: var(--coral); }
+
+/* Refer a founder — form */
+.referral-form {
+  max-width: 640px;
+  margin: 48px auto 0;
+  background: var(--cream);
+  border: 1px solid var(--hairline);
+  border-left: 4px solid var(--coral);
+  border-radius: 14px;
+  padding: 40px 40px 36px;
+  box-shadow: 0 10px 40px rgba(42, 42, 42, 0.05);
+}
+.form-field { margin: 0 0 20px; }
+.form-label {
+  display: block;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  margin: 0 0 8px;
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 15px;
+  color: var(--charcoal);
+  background: var(--cream);
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  padding: 12px 14px;
+  transition: border-color .2s var(--ease);
+}
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--coral);
+}
+.form-textarea { min-height: 120px; resize: vertical; }
+.referral-form .btn { margin-top: 4px; }
+.referral-note {
+  text-align: center;
+  color: var(--warm-gray);
+  margin: 28px 0 0;
+}
+
+/* Footnote link at the end of the About bench block */
+.bench-footnote {
+  text-align: center;
+  color: var(--warm-gray);
+  max-width: 60ch;
+  margin: 40px auto 0;
+}
+
+/* Thanks page */
+.thanks-hero {
+  padding: 140px 0;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 540px;
+  }
+  .referral-form { padding: 32px 24px; }
+  .earn-table th,
+  .earn-table td { padding: 14px 16px; }
+}
+
 /* Respect users who prefer reduced motion. */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
