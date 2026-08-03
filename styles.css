@@ -1034,6 +1034,12 @@ body.nav-locked { overflow: hidden; }
 
 .partners-intro .lead { font-size: 16px; }
 
+/* Tighten the top-of-page flow (hero -> intro -> why peers) on the
+   partners page only; scoped under .page-partners so no other page moves. */
+.page-partners .pricing-hero { padding: 112px 0 32px; }
+.page-partners .partners-intro { padding: 56px 0; }
+.page-partners .partners-intro + .section { padding-top: 56px; }
+
 /* Why peers refer — 3-up cards (reuses .toolkit-card) */
 .reasons-grid {
   margin: 56px auto 0;
@@ -1165,6 +1171,11 @@ body.nav-locked { overflow: hidden; }
   .referral-form { padding: 32px 24px; }
   .earn-table th,
   .earn-table td { padding: 14px 16px; }
+
+  /* Match the tightened top-of-page flow at mobile widths */
+  .page-partners .pricing-hero { padding: 80px 0 20px; }
+  .page-partners .partners-intro { padding: 36px 0; }
+  .page-partners .partners-intro + .section { padding-top: 36px; }
 }
 
 /* Respect users who prefer reduced motion. */
