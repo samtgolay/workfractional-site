@@ -142,7 +142,7 @@ h1, h2, h3 { font-family: var(--display); color: var(--ink); margin: 0; }
   font-weight: 700; font-size: 58px; line-height: 1.02; letter-spacing: -0.015em;
   margin: 0 0 22px;
 }
-.hero__sub { font-size: 18px; line-height: 1.6; color: var(--slate); margin: 0 0 30px; max-width: 640px; text-wrap: pretty; }
+.hero__sub { font-size: 18px; line-height: 1.65; color: var(--slate); margin: 0 0 30px; max-width: none; text-wrap: pretty; }
 .hero__trust {
   margin-top: 34px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink);
   padding: 12px 2px;
