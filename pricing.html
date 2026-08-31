@@ -3,282 +3,388 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing — WorkFractional</title>
-  <meta name="description" content="Two ways to work together: an Operations Diagnostic if you want a clear next step, or an embedded retainer if you want me in the seat." />
+
+  <title>Pricing | Fractional COO Retainers &amp; Operations Diagnostic | WORKfractional</title>
+  <meta name="description" content="Two ways to work together: a $2,500 Operations Diagnostic if you want a clear next step, or an embedded fractional COO retainer from $3,000 a month in renewable 90-day blocks." />
+  <link rel="canonical" href="https://workfractional.us/pricing" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="WORKfractional" />
+  <meta property="og:url" content="https://workfractional.us/pricing" />
+  <meta property="og:title" content="Pricing | Fractional COO Retainers &amp; Operations Diagnostic | WORKfractional" />
+  <meta property="og:description" content="Two ways to work together: a $2,500 Operations Diagnostic if you want a clear next step, or an embedded fractional COO retainer from $3,000 a month in renewable 90-day blocks." />
+  <meta property="og:image" content="https://workfractional.us/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pricing | Fractional COO Retainers &amp; Operations Diagnostic | WORKfractional" />
+  <meta name="twitter:description" content="Two ways to work together: a $2,500 Operations Diagnostic if you want a clear next step, or an embedded fractional COO retainer from $3,000 a month in renewable 90-day blocks." />
+  <meta name="twitter:image" content="https://workfractional.us/og-image.png" />
+
+  <link rel="icon" href="/workfractionallogo.svg" type="image/svg+xml" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Parisienne&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://workfractional.us/#service",
+    "name": "Fractional COO",
+    "serviceType": "Fractional COO",
+    "url": "https://workfractional.us/pricing",
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://workfractional.us/#organization",
+      "name": "WorkFractional",
+      "url": "https://workfractional.us/"
+    },
+    "areaServed": { "@type": "Country", "name": "United States" },
+    "keywords": "fractional COO, fractional operations, fractional head of operations, marketing agency, law firm, beauty brand, sports representation agency, professional services, founder-led service business",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Operations Diagnostic",
+        "description": "A focused engagement to pinpoint exactly where you're the bottleneck, ending in a prioritized roadmap.",
+        "price": "2500",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Stabilize",
+        "description": "One system, built right. Renewable 90-day blocks.",
+        "price": "3000",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "3000",
+          "priceCurrency": "USD",
+          "unitCode": "MON"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Build",
+        "description": "Two systems, working together. Renewable 90-day blocks.",
+        "price": "4500",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "4500",
+          "priceCurrency": "USD",
+          "unitCode": "MON"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Exit-Ready",
+        "description": "The whole machine, ready to sell. Renewable 90-day blocks.",
+        "price": "6000",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "6000",
+          "priceCurrency": "USD",
+          "unitCode": "MON"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <!-- ============== STICKY TOP NAV ============== -->
-  <header class="nav" id="nav">
-    <div class="container nav-inner">
-      <a href="/" class="wordmark wordmark-sm" aria-label="WorkFractional home">
-        <span class="wordmark-work">WORK</span><span class="wordmark-script">fractional</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================== NAV ============================== -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="/" class="wordmark" aria-label="WorkFractional home">
+        <span class="wordmark__work">WORK</span><span class="wordmark__script">fractional</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <button class="nav__toggle" type="button" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
-      <nav class="nav-links" id="nav-menu" aria-label="Primary">
-        <a href="/#what-i-do">What We Do</a>
-        <a href="/#how-we-work">How we work</a>
-        <a href="/pricing" aria-current="page">Pricing</a>
-        <a href="/partners">Partners</a>
+      <nav class="nav__links" id="nav-menu" aria-label="Primary">
+        <a href="/#what-i-do">What I Do</a>
+        <a href="/#how-we-work">How I Work</a>
+        <a href="/pricing" class="is-current" aria-current="page">Pricing</a>
         <a href="/#about">About</a>
-        <a href="/#contact" class="btn btn-primary btn-sm">Book a Call</a>
+        <a class="btn btn--sm" href="#contact">Book a Discovery Call</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main">
 
-    <!-- ============== HERO ============== -->
-    <section class="pricing-hero reveal">
-      <div class="container narrow narrow-center">
-        <p class="eyebrow">Pricing</p>
-        <h1 class="section-headline pricing-hero-headline">Two ways to work together.</h1>
-        <p class="lead">
-          An Operations Diagnostic if you want a clear next step. A retainer if you want me in the seat. Both run on the same proven rhythm: diagnose, build, hand off.
-        </p>
-      </div>
-    </section>
+    <!-- ============================== HERO ============================== -->
+    <header class="price-hero">
+      <p class="eyebrow">Pricing</p>
+      <h1>Two ways to work together.</h1>
+      <p class="lead">An Operations Diagnostic if you want a clear next step. A retainer if you want me in the seat. Both run on the same rhythm: diagnose, build, hand off.</p>
+    </header>
 
-    <!-- ============== OPERATIONS DIAGNOSTIC ============== -->
-    <section class="section section-diagnostic reveal">
-      <div class="container">
-        <div class="diagnostic-card">
-          <div class="diagnostic-head">
-            <p class="eyebrow eyebrow-onlight">Entry point</p>
-            <h2 class="section-headline">Operations Diagnostic</h2>
-            <p class="diagnostic-sub">30 days or less. <strong>$2,500.</strong></p>
-          </div>
-          <div class="diagnostic-body">
-            <p>
-              A focused engagement to pinpoint exactly where you're the bottleneck. I spend a week embedded in your business, then deliver a prioritized roadmap you can act on with me or without me. The low-risk way to see how I work.
-            </p>
-            <h3 class="diagnostic-list-title">What you get</h3>
-            <ul class="diagnostic-list">
-              <li>One week of discovery: stakeholder interviews, process review, systems audit</li>
-              <li>A written roadmap prioritizing the work that will move the needle</li>
-              <li>A 60-minute walkthrough call to align on next steps</li>
-              <li>Optional credit toward your first retainer block if we continue</li>
-            </ul>
-            <a href="/#contact" class="btn btn-primary">Book a Discovery Call</a>
-          </div>
+    <!-- =========================== DIAGNOSTIC =========================== -->
+    <div class="wrap" style="padding-top:56px;">
+      <div class="diagnostic">
+        <div>
+          <div class="diagnostic__kicker">ENTRY POINT &middot; 30 DAYS OR LESS</div>
+          <h2>Operations Diagnostic</h2>
+          <p>A focused engagement to pinpoint exactly where you're the bottleneck. I spend a week embedded in your business, then deliver a prioritized roadmap you can act on with me or without me. The low-risk way to see how I work.</p>
+          <div class="diagnostic__price">$2,500</div>
+          <a class="btn" href="#contact">Book a Discovery Call</a>
+        </div>
+        <div class="getlist">
+          <div class="getlist__head">WHAT YOU GET</div>
+          <ol>
+            <li data-n="01"><span>One week of discovery: stakeholder interviews, process review, systems audit</span></li>
+            <li data-n="02"><span>A written roadmap prioritizing the work that will move the needle</span></li>
+            <li data-n="03"><span>A 60-minute walkthrough call to align on next steps</span></li>
+            <li data-n="04"><span>Optional credit toward your first retainer block if we continue</span></li>
+          </ol>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- ============== RETAINER TIERS ============== -->
-    <section class="section section-tiers reveal" id="tiers">
-      <div class="container">
-        <div class="narrow narrow-center">
-          <p class="eyebrow">Ongoing engagement</p>
-          <h2 class="section-headline">Embedded Head of Operations.</h2>
-          <p class="lead">
-            90-day blocks. Renewable. Three tiers based on how much of the business you want me running.
-          </p>
-        </div>
+    <!-- ============================= TIERS ============================= -->
+    <section class="section" style="padding-top:72px;">
+      <div class="wrap">
+        <p class="eyebrow">Ongoing Engagement</p>
+        <h2 class="h2" style="font-size:36px;margin-bottom:12px;">Embedded COO.</h2>
+        <p class="lead" style="font-size:16px;line-height:1.6;margin-bottom:40px;">90-day blocks. Renewable. Three tiers based on how much of the machine you want me running.</p>
 
-        <div class="tier-grid">
-
-          <article class="tier-card">
-            <p class="eyebrow eyebrow-onlight">Foundation</p>
-            <p class="tier-price">$3,000 <span class="tier-price-unit">/ month</span></p>
-            <p class="tier-cadence">90-day blocks</p>
-            <p class="tier-positioning">For founders who need a senior operator setting the foundation without full embedded leadership.</p>
-            <p class="tier-list-title">What's included</p>
-            <ul class="tier-list">
-              <li>Operations audit and 90-day priority roadmap</li>
-              <li>Weekly 1:1 with founder</li>
-              <li>One core workstream (operations, recruiting, OR GTM)</li>
-              <li>SOP and process documentation</li>
+        <div class="tiers">
+          <article class="tier">
+            <div class="tier__name">Stabilize</div>
+            <div class="tier__price">$3,000<span class="tier__per"> / month</span></div>
+            <div class="tier__blocks">90-DAY BLOCKS</div>
+            <p class="tier__pitch">One system, built right.</p>
+            <div class="chips">
+              <span class="chip">01 OPERATIONS</span><span class="chip">02 GO-TO-MARKET</span><span class="chip">03 RECRUITING</span>
+            </div>
+            <div class="chips__note">CHOOSE ONE</div>
+            <ul class="tier__list">
+              <li>Weekly founder 1:1</li>
+              <li>One workstream, built and documented</li>
+              <li>Tech stack audit</li>
               <li>Async support between sessions</li>
             </ul>
-            <a href="/#contact" class="btn btn-primary">Schedule a Call</a>
+            <a class="btn btn--block" href="#contact">Book a Discovery Call</a>
           </article>
 
-          <article class="tier-card is-featured">
-            <span class="tier-badge">Most popular</span>
-            <p class="eyebrow eyebrow-onlight">Build</p>
-            <p class="tier-price">$4,500 <span class="tier-price-unit">/ month</span></p>
-            <p class="tier-cadence">90-day blocks</p>
-            <p class="tier-positioning">For founders building the operational machine across two functions.</p>
-            <p class="tier-list-title">What's included</p>
-            <ul class="tier-list">
-              <li>Everything in Foundation</li>
-              <li>Two active workstreams (operations + recruiting OR GTM)</li>
-              <li>Bench operator brought in for specialized scope</li>
+          <article class="tier tier--featured">
+            <div class="tier__flag">MOST POPULAR</div>
+            <div class="tier__name">Build</div>
+            <div class="tier__price">$4,500<span class="tier__per"> / month</span></div>
+            <div class="tier__blocks">90-DAY BLOCKS</div>
+            <p class="tier__pitch">Two systems, working together.</p>
+            <div class="chips">
+              <span class="chip">01 OPERATIONS</span><span class="chip">02 GO-TO-MARKET</span><span class="chip">03 RECRUITING</span>
+            </div>
+            <div class="chips__note">CHOOSE TWO</div>
+            <ul class="tier__list">
+              <li>Everything in Stabilize</li>
+              <li>Two workstreams, integrated</li>
               <li>Team-level meetings, not just founder 1:1</li>
-              <li>Leadership team check-ins</li>
+              <li>Bench operator for specialized scope</li>
               <li>Higher async availability</li>
             </ul>
-            <a href="/#contact" class="btn btn-primary">Schedule a Call</a>
+            <a class="btn btn--block" href="#contact">Book a Discovery Call</a>
           </article>
 
-          <article class="tier-card">
-            <p class="eyebrow eyebrow-onlight">Transform</p>
-            <p class="tier-price">$6,000 <span class="tier-price-unit">/ month</span></p>
-            <p class="tier-cadence">90-day blocks</p>
-            <p class="tier-positioning">For founders building toward a major scale moment or an exit.</p>
-            <p class="tier-list-title">What's included</p>
-            <ul class="tier-list">
+          <article class="tier">
+            <div class="tier__name">Exit-Ready</div>
+            <div class="tier__price">$6,000<span class="tier__per"> / month</span></div>
+            <div class="tier__blocks">90-DAY BLOCKS</div>
+            <p class="tier__pitch">The whole machine, ready to sell.</p>
+            <div class="chips">
+              <span class="chip chip--filled">01 OPERATIONS</span><span class="chip chip--filled">02 GO-TO-MARKET</span><span class="chip chip--filled">03 RECRUITING</span><span class="chip chip--filled">05 EXIT-READINESS</span>
+            </div>
+            <div class="chips__note">ALL INCLUDED</div>
+            <ul class="tier__list">
               <li>Everything in Build</li>
-              <li>All three workstreams active (operations, recruiting, GTM)</li>
-              <li>Bench operators across multiple specialties</li>
+              <li>All three workstreams, run as one system</li>
               <li>Exit-readiness planning with our M&amp;A advisor</li>
+              <li>Bench operators across specialties</li>
               <li>Board and investor communication support</li>
-              <li>Priority response and availability</li>
+              <li>Priority response</li>
             </ul>
-            <a href="/#contact" class="btn btn-primary">Schedule a Call</a>
+            <a class="btn btn--block" href="#contact">Book a Discovery Call</a>
           </article>
+        </div>
 
+        <!-- ========================= COMPARISON ========================= -->
+        <div class="compare-wrap">
+          <table class="compare">
+            <caption class="sr-only">What each tier includes</caption>
+            <colgroup><col style="width:40%"><col style="width:20%"><col style="width:20%"><col style="width:20%"></colgroup>
+            <thead>
+              <tr>
+                <th scope="col"><span class="sr-only">Feature</span></th>
+                <th scope="col">STABILIZE</th>
+                <th scope="col">BUILD</th>
+                <th scope="col">EXIT-READY</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Workstreams (01 Operations, 02 Go-to-market, 03 Recruiting)</th>
+                <td>1 of 3</td><td>2 of 3</td><td>All 3</td>
+              </tr>
+              <tr>
+                <th scope="row">04 Tech stack audit and consolidation</th>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+              </tr>
+              <tr>
+                <th scope="row">05 Exit-readiness with M&amp;A advisor</th>
+                <td><span class="sr-only">Not included</span></td>
+                <td><span class="sr-only">Not included</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+              </tr>
+              <tr>
+                <th scope="row">06 Founder time, owned or automated</th>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Weekly founder 1:1</th>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Team-level meetings</th>
+                <td><span class="sr-only">Not included</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Bench operators</th>
+                <td><span class="sr-only">Not included</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span> <span class="dot" aria-hidden="true">&#9679;</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Board and investor comms</th>
+                <td><span class="sr-only">Not included</span></td>
+                <td><span class="sr-only">Not included</span></td>
+                <td><span class="dot" role="img" aria-label="Included">&#9679;</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Response time</th>
+                <td>Standard</td><td>Higher</td><td>Priority</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
 
-    <!-- ============== WHAT TO KNOW ============== -->
-    <section class="section section-expectations reveal">
-      <div class="container narrow">
-        <p class="eyebrow">Set expectations</p>
-        <h2 class="section-headline">Full transparency.</h2>
-        <p class="lead">
-          Engagements are 90-day blocks, renewable. This gives both sides a real review point. We rescope or move on at the end of each block.
-        </p>
-        <p class="lead">
-          I work alongside your team, not above it. I plug into your tools and your standups. I don't replace your existing leaders, I make them more effective.
-        </p>
-        <p class="lead">
-          Bench operators come in when scope calls for it. Every engagement starts with me. When the work expands beyond my lane, I bring in the right specialist from the bench, vetted and accountable to the same outcome.
-        </p>
-      </div>
-    </section>
-
-    <!-- ============== FAQ ============== -->
-    <section class="section section-faq reveal" id="faq">
-      <div class="container narrow">
-        <div class="narrow-center">
-          <p class="eyebrow">FAQ</p>
-          <h2 class="section-headline">Questions founders ask.</h2>
-        </div>
-
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary class="faq-q">How quickly can we start?</summary>
-            <p class="faq-a">Typically within two weeks of our Discovery Call, depending on scope.</p>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-q">What if I'm not sure which tier I need?</summary>
-            <p class="faq-a">Start with the Operations Diagnostic. The roadmap tells us where to begin.</p>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-q">Can I switch tiers between blocks?</summary>
-            <p class="faq-a">Yes. We re-scope at the end of each 90-day block.</p>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-q">Do you work with my existing team?</summary>
-            <p class="faq-a">Yes. I embed in your tools, attend your standups, and partner with your leaders. I never go around them.</p>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-q">Is there a contract minimum?</summary>
-            <p class="faq-a">Each retainer block is a 90-day commitment. After that, renewable in 90-day blocks.</p>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-q">Do you sign NDAs?</summary>
-            <p class="faq-a">Always.</p>
-          </details>
+    <!-- ========================== TRANSPARENCY ========================== -->
+    <section class="band" style="margin-top:72px;">
+      <div class="band__inner" style="display:block;padding-top:64px;padding-bottom:64px;">
+        <p class="eyebrow">Set Expectations</p>
+        <h2 class="h2" style="font-size:36px;margin-bottom:36px;">Full transparency.</h2>
+        <div class="transparency">
+          <div>
+            <div class="transparency__k">90-DAY BLOCKS</div>
+            <p>Engagements are 90-day blocks, renewable. This gives both sides a real review point. We rescope or move on at the end of each block.</p>
+          </div>
+          <div>
+            <div class="transparency__k">ALONGSIDE, NOT ABOVE</div>
+            <p>I work alongside your team, not above it. I plug into your tools and your standups. I don't replace your existing leaders, I make them more effective.</p>
+          </div>
+          <div>
+            <div class="transparency__k">THE BENCH</div>
+            <p>Bench operators come in when scope calls for it. Every engagement starts with me. When the work expands beyond my lane, I bring in the right specialist from the bench, vetted and accountable to the same outcome.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ============== FINAL CTA ============== -->
-    <section class="section section-pricing-cta reveal">
-      <div class="container narrow narrow-center">
-        <h2 class="section-headline">Let's talk.</h2>
-        <p class="lead">
-          A 30-minute fit check. We'll figure out where you're stuck and what the right next step looks like.
-        </p>
-        <a href="/#contact" class="btn btn-primary">Book a Discovery Call</a>
+    <!-- ============================== FAQ ============================== -->
+    <section class="section" style="padding-top:72px;">
+      <div class="wrap">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="h2" style="font-size:36px;margin-bottom:36px;">Questions founders ask.</h2>
+        <div class="faq">
+          <div class="faq__item">
+            <h3>How quickly can we start?</h3>
+            <p>Typically within two weeks of our Discovery Call, depending on scope.</p>
+          </div>
+          <div class="faq__item">
+            <h3>What if I'm not sure which tier I need?</h3>
+            <p>Start with the Operations Diagnostic. The roadmap tells us where to begin.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Do I need to know what&rsquo;s broken before I call?</h3>
+            <p>No. That&rsquo;s what the Diagnostic is for. Most founders come in with a symptom, slow sales, a bad hire, chaos in delivery, and we find the system underneath it.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Can I switch tiers between blocks?</h3>
+            <p>Yes. We rescope at the end of each 90-day block.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Do you work with my existing team?</h3>
+            <p>Yes. I embed in your tools, attend your standups, and partner with your leaders. I never go around them.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Is there a contract minimum?</h3>
+            <p>Each retainer block is a 90-day commitment. After that, renewable in 90-day blocks.</p>
+          </div>
+          <div class="faq__item">
+            <h3>Do you sign NDAs?</h3>
+            <p>Always.</p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- ============================ CLOSING ============================ -->
+    <section class="section" style="padding-top:72px;padding-bottom:84px;" id="contact">
+      <div class="wrap">
+        <div class="closing">
+          <div>
+            <h2>Let's talk.</h2>
+            <p>A 30-minute fit check. We'll figure out where you're stuck and what the right next step looks like.</p>
+            <p class="book__note">Not sure yet? Start with the $2,500 Operations Diagnostic; it credits toward your first retainer block.</p>
+          </div>
+          <div class="scheduler">
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/sam-workfractional/workfractional-discovery-chat"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- ============== FOOTER ============== -->
+  <!-- ============================= FOOTER ============================= -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <a href="/" class="wordmark wordmark-sm" aria-label="WorkFractional home">
-        <span class="wordmark-work">WORK</span><span class="wordmark-script">fractional</span>
-      </a>
-      <p class="footer-tagline">Fractional operations leadership for founder-led businesses.</p>
-      <p class="footer-meta">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__mark">WORKfractional</div>
+        <div class="footer__tag">Fractional COO for founder-led service businesses.</div>
+      </div>
+      <div class="footer__meta">
         <a href="mailto:sam@workfractional.us">sam@workfractional.us</a>
-        <span aria-hidden="true">·</span>
+        <span class="footer__sep" aria-hidden="true">&middot;</span>
         <a href="/partners">Partners</a>
-        <span aria-hidden="true">·</span>
-        <span>&copy; 2026 WorkFractional. All rights reserved.</span>
-      </p>
+        <span class="footer__sep" aria-hidden="true">&middot;</span>
+        <span class="footer__copy">&copy; 2026 WorkFractional</span>
+      </div>
     </div>
   </footer>
 
-  <script>
-    // Mobile hamburger nav toggle.
-    var navToggle = document.querySelector('.nav-toggle');
-    var navMenu = document.getElementById('nav-menu');
-    function closeMenu() {
-      if (!navToggle || !navMenu) return;
-      navToggle.setAttribute('aria-expanded', 'false');
-      navToggle.setAttribute('aria-label', 'Open menu');
-      navMenu.classList.remove('is-open');
-      document.body.classList.remove('nav-locked');
-    }
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', function () {
-        var open = navToggle.getAttribute('aria-expanded') === 'true';
-        if (open) {
-          closeMenu();
-        } else {
-          navToggle.setAttribute('aria-expanded', 'true');
-          navToggle.setAttribute('aria-label', 'Close menu');
-          navMenu.classList.add('is-open');
-          document.body.classList.add('nav-locked');
-        }
-      });
-      navMenu.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', closeMenu);
-      });
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') closeMenu();
-      });
-    }
-
-    // Fade-in on scroll for any element with .reveal
-    var revealEls = document.querySelectorAll('.reveal');
-    if ('IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            io.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-      revealEls.forEach(function (el) { io.observe(el); });
-    } else {
-      revealEls.forEach(function (el) { el.classList.add('is-visible'); });
-    }
-
-    // Shadow on nav when scrolled.
-    var nav = document.getElementById('nav');
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > 8) { nav.classList.add('is-scrolled'); }
-      else { nav.classList.remove('is-scrolled'); }
-    });
-  </script>
+  <script src="/site.js" defer></script>
 </body>
 </html>
